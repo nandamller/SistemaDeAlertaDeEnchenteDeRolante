@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>Sistema de Alerta de Enchente em Rolante</title>
+		<meta charset="utf-8">
+		
+		<script type="text/javascript" src="query.js"></script>
+			
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	
+	<body>
+		<header>
+			<section id="SAER">
+				<img id="logotipo" src="img/logo.png" alt="Imagem do logotipo">
+				<h1>Sistema de Alerta de Enchente de Rolante</h1>
+				
+			</section>
+					
+			<ul class="menu">
+				<li id="opcaoInicio"><a href="">Início</a></li>
+				<li id="opcaoInfo"><a href="">Informações</a></li>
+				<li><a href="">Locais</a></li>
+				<li><a href="">Gráficos</a></li>
+				<li><a href="">Mapa</a></li>
+				<li><a href="">Cadastrar</a></li>
+				<li><a href="">Projeto</a></li>
+			</ul>			
+		</header>
+		
+		<div id="conteudo">
+			<section id="inicio">
+				<div id="ultimaInformacao">
+				</div>
+				
+				<div id="ultimoLocais">
+				</div>
+				
+				<div id=ultimoGraficos">
+				</div>
+				
+			</section>
+			
+			<section class="informacoes">
+				<h2>Em caso de emergêngia ligue:</h2>
+				
+				<div id="contato">
+					<p id="infoBom">Bombeiros</p>
+					<p id="infoBri">Brigada Militar</p>
+					<p id="infoDef">Defesa Civil</p>
+				</div>
+				
+				<div id="numeros">
+					<p id="infoBomNum">193</p>
+					<p id="infoBriNum">190</p>
+					<p id="infoDefNum">199</p>
+				</div>
+				
+				<div id="oQueFazer">
+					<h2>O que fazer:</h2>
+					<p>Só para teste.</p>
+				</div>
+				
+			</section>
+			
+			<section class="locais">
+				<h2>Locais Afetados:</h2>
+				
+				<section id="bairros">
+				
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua com um nome nome nome nome grande teste;</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste2</h3>
+						<p>- Rua teste 2</p>
+						<p>- Rua teste 3</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua teste 4;</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua teste 5;</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua teste 6;</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua teste 7;</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua teste 8;</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua teste 9;</p>
+					</div>
+					
+					<div class="bairro">
+						<h3>Bairro teste</h3>
+						<p>- Rua teste 10;</p>
+					</div>
+					
+				</section>
+				
+			</section>
+			
+			<section class="graficos">
+				<h3 id="tituloGrafico"></h3>
+			</section>
+			<section class="mapa">
+			</section>
+			
+			<section class="cadastro">
+				<h2>Cadastre-se e receba as informações sobre a inundação em sua rua e região por SMS ou e-mail.</h2>
+				<button class="botaoCadastro">Novo Cadastro</button>
+				<button class="botaoCadastro">Atualizar Cadastro</button>
+				
+				<section id="novoCadastro">
+					
+					<p id="" class="escrita">Nome completo</p>
+					<p class="escrita">E-mail</p>
+					
+					<p class="escrita">Endereço</p>
+					<p class="escrita">Número Celular</p>
+					
+
+					<input type="text" id="nome" class="inputs">				
+					<input type="text" id="email" class="inputs">
+					
+					<input type="checkbox" id="checkEmail" class="recebimento">
+					<p id="receberEmail" class="recebimento">Gostaria de receber mensagens via e-mail.</p>
+					
+					<select id="bairrokkk" class="inputs">
+						<option class="Todos Centro">Centro</option>
+						<option class="Todos Rio Branco">Rio Branco</option>
+						<option class="Todos Grassman">Grassman</option>
+						<option class="Todos Farias">Farias</option>
+						<option class="Todos ZonasRurais">Zonas Rurais</option>
+					</select>
+					
+					<select id="ruas" class="inputs">
+						<option class="ruasCentro">Avenida Coronel João Linck</option>
+						<option class="ruasCentro">Rua Alfredo Wust</option>
+						<option class="ruasCentro">Rua Vinte Um de Abril</option>
+						<option class="ruasFarias">Rua Pedro Von Müler</option>
+						<option class="ruasCentro">Rua Papa João Paulo I</option>
+					</select>
+					
+					<input type="text" id="numero" class="inputs">
+					
+					<input type="checkbox" id="checkSms" class="recebimento">
+					<p id="receberSms" class="recebimento">Gostaria de receber mensages via SMS.</p>
+					
+					<button id="confirmCadastrar">Cadastrar</button>
+				</section>
+			</section>
+				
+			<section class="projeto">
+				<h2 class="projetoText">Projeto</h2>
+				<p class="projetoText">O projeto foi desenvolvido pensando na dificuldade de adquirir informação sobre as localidades afetadas e quais ruas da cidade estão alagadas, diante das enchentes que ocorrem frequentemente em nossa região.</p>
+				
+				<h2 class="desenvolvedoras">Desenvolvedoras</h2>
+				<p class="desenvolvedoras">Fernanda Larissa Müller Lílian Juliana da Rosa Lívia Pereira Santos Paula Giovana Friedrich</p>
+				
+				<h2 class="colaboradores"></h2>
+				<p>Corpo de Bombeiros Voluntários de Rolante</p>
+				
+			</section>
+			
+			<footer>
+				<p>Copyright &copy; 2021 - Sistema de Alerta de Enchente de Rolante	 - All Rights Reserved</p>
+			</footer>
+			
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,122 @@
+header{
+	background-color: #AEC6CD;
+	position: fixed;
+	
+	/*fonte*/
+	color: white;
+	font-family: Verdana, Arial, sans-serif;
+	font-variant: small-caps;
+	font-size: 20px;
+	
+	/*posição*/
+	height: 150px;
+	width: 100%;
+	line-height: 150px;
+	position: relative;
+	justify-content: space-evenly;
+}
+
+#SAER{
+	font-size: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	position: absolute;
+	left: 0;
+}
+
+#logotipo{
+	width: 150px;
+	height: 150px;
+}
+
+.menu{
+	width: 40%;
+	display: flex;
+	justify-content: space-evenly;
+	position: absolute;
+	right: 0;
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;
+}
+
+#conteudo{
+	/*Para deixar o layout centralizado*/
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*Para fazer as páginas desaparecerem
+.informacoes{
+	position: absolute;
+	left: -3000px;
+}
+.locais{
+	position: absolute;
+	left: -3000px;
+}
+.graficos{
+	position: absolute;
+	left: -3000px;
+}
+.mapa{
+	position: absolute;
+	left: -3000px;
+}
+.cadastro{
+	position: absolute;
+	left: -3000px;
+}
+.projeto{
+	position: absolute;
+	left: -3000px;
+}*/
+
+.informacoes{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 30px;
+}
+
+.informacoes h2{
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#contato{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#numeros{
+	display: flex;
+	justify-content: space-around;
+}
+
+.locais{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 30px;
+}
+
+.locais h2{
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#bairros{
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bairro{
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+}
+
+
