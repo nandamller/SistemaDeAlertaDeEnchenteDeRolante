@@ -5,6 +5,7 @@
 		<title>Sistema de Alerta de Enchente em Rolante</title>
 		<meta charset="utf-8">
 		
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 		<script type="text/javascript" src="query.js"></script>
 			
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -18,32 +19,42 @@
 				<h1>Sistema de Alerta de Enchente de Rolante</h1>
 				
 			</section>
-					
-			<ul class="menu">
-				<li id="opcaoInicio"><a href="">Início</a></li>
-				<li id="opcaoInfo"><a href="">Informações</a></li>
-				<li><a href="">Locais</a></li>
-				<li><a href="">Gráficos</a></li>
-				<li><a href="">Mapa</a></li>
-				<li><a href="">Cadastrar</a></li>
-				<li><a href="">Projeto</a></li>
-			</ul>			
+			
+			<nav id="navegacao">
+				<ul class="menu">
+					<li id="opcaoInicio"><a href="">Início</a></li>
+					<li id="opcaoInfo"><a href="">Informações</a></li>
+					<li><a href="">Locais</a></li>
+					<li><a href="">Gráficos</a></li>
+					<li><a href="">Mapa</a></li>
+					<li><a href="">Cadastrar</a></li>
+					<li><a href="">Projeto</a></li>
+				</ul>	
+			</nav>		
 		</header>
 		
 		<div id="conteudo">
 			<section id="inicio">
-				<div id="ultimaInformacao">
+				<div class="ultimas">
+					<h3>Informações</h3>
+					<p class="texto">Estarão disponíveis no site as localidades afetadas, além de informações sobre o que fazer em situação de enchentes e contatos de emergência.</p>
 				</div>
 				
-				<div id="ultimoLocais">
+				<div class="ultimas">
+					<h3>Gráficos</h3>
+					<p class="figura"><img src="img/grafico.png" width="300" alt="Imagem do gráfico"></p>
 				</div>
 				
-				<div id=ultimoGraficos">
+				<div class="ultimas">
+					<h3>Mapa</h3>
+					<p class="figura"><img src="img/mapa.png" width="300" alt="Imagem do mapa"></p>
 				</div>
 				
 			</section>
 			
 			<section class="informacoes">
+				
+				
 				<h2>Em caso de emergêngia ligue:</h2>
 				
 				<div id="contato">
@@ -60,7 +71,7 @@
 				
 				<div id="oQueFazer">
 					<h2>O que fazer:</h2>
-					<p>Só para teste.</p>
+					<p>Só para teste, pois essas informações estarão no Banco de Dados.</p>
 				</div>
 				
 			</section>
@@ -126,62 +137,135 @@
 			<section class="mapa">
 			</section>
 			
-			<section class="cadastro">
+			<div class="cadastro">
 				<h2>Cadastre-se e receba as informações sobre a inundação em sua rua e região por SMS ou e-mail.</h2>
-				<button class="botaoCadastro">Novo Cadastro</button>
-				<button class="botaoCadastro">Atualizar Cadastro</button>
-				
-				<section id="novoCadastro">
-					
-					<p id="" class="escrita">Nome completo</p>
-					<p class="escrita">E-mail</p>
-					
-					<p class="escrita">Endereço</p>
-					<p class="escrita">Número Celular</p>
-					
-
-					<input type="text" id="nome" class="inputs">				
-					<input type="text" id="email" class="inputs">
-					
-					<input type="checkbox" id="checkEmail" class="recebimento">
-					<p id="receberEmail" class="recebimento">Gostaria de receber mensagens via e-mail.</p>
-					
-					<select id="bairrokkk" class="inputs">
-						<option class="Todos Centro">Centro</option>
-						<option class="Todos Rio Branco">Rio Branco</option>
-						<option class="Todos Grassman">Grassman</option>
-						<option class="Todos Farias">Farias</option>
-						<option class="Todos ZonasRurais">Zonas Rurais</option>
-					</select>
-					
-					<select id="ruas" class="inputs">
-						<option class="ruasCentro">Avenida Coronel João Linck</option>
-						<option class="ruasCentro">Rua Alfredo Wust</option>
-						<option class="ruasCentro">Rua Vinte Um de Abril</option>
-						<option class="ruasFarias">Rua Pedro Von Müler</option>
-						<option class="ruasCentro">Rua Papa João Paulo I</option>
-					</select>
-					
-					<input type="text" id="numero" class="inputs">
-					
-					<input type="checkbox" id="checkSms" class="recebimento">
-					<p id="receberSms" class="recebimento">Gostaria de receber mensages via SMS.</p>
-					
-					<button id="confirmCadastrar">Cadastrar</button>
+				<section id="botoesCadastro">
+					<button class="botaoCadastro">Novo cadastro</button>
+					<button class="botaoCadastro">Atualizar cadastro</button>
 				</section>
-			</section>
 				
-			<section class="projeto">
-				<h2 class="projetoText">Projeto</h2>
-				<p class="projetoText">O projeto foi desenvolvido pensando na dificuldade de adquirir informação sobre as localidades afetadas e quais ruas da cidade estão alagadas, diante das enchentes que ocorrem frequentemente em nossa região.</p>
+				<div id="infoCadastros">
+					<section id="escritas">
+						<p>Nome completo</p>
+						<p>E-mail</p>
+						<p></p>
+						<p>Endereço</p>
+						<p>Número celular</p>
+					</section>
+					
+					<section id="inputs">
+						<input type="text" id="nome" class="input"><br>
+						<input type="text" id="email" class="input"><br>
+						<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via email.</label><br>
+						<select class="input">
+							<option selected="selected">Bairro</option>
+							<option>Centro</option>
+							<option>Rio Branco</option>
+							<option>Grassman</option>
+						</select>
+						<select class="input">
+							<option selected="selected">Rua</option>
+							<option>Rua 01</option>
+							<option>Rua 02</option>
+							<option>Rua 03</option>
+						</select><br>
+						<input type="text" id="numeroCelular" class="input"><br>
+						<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via celular.</label><br>
+					</section>
+				</div>
+				<section class="centralizar">
+					<button id="botaoCadastrar">Cadastrar</button>				
+				<section>
+			</div>	
+			
+			<div>
+				<div id="atualizarCadastro">
+					<section id="dadosAntigos">
+						<section id="escritas">
+							<p>Nome completo</p>
+							<p>E-mail antigo</p>
+							<p></p>
+							<p>Endereço antigo</p>
+							<p></p>
+							<p>Número celular antigo</p>
+						</section>
+						
+						<section id="inputs">
+							<input type="text" id="nome" class="input"><br>
+							<input type="text" id="email" class="input"><br>
+							<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via email.</label><br>
+							<select class="input">
+								<option selected="selected">Bairro</option>
+								<option>Centro</option>
+								<option>Rio Branco</option>
+								<option>Grassman</option>
+							</select><br>
+							<select class="input">
+								<option selected="selected">Rua</option>
+								<option>Rua 01</option>
+								<option>Rua 02</option>
+								<option>Rua 03</option>
+							</select><br>
+							<input type="text" id="numeroCelular" class="input"><br>
+							<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via celular.</label><br>
+						</section>
+					</section>
+					
+					<section id="dadosNovos">
+						<section id="escritas">
+							<p>Nome completo</p>
+							<p>Novo E-mail</p>
+							<p></p>
+							<p>Novo Endereço</p>
+							<p></p>
+							<p>Novo número celular</p>
+						</section>
+						
+						<section id="inputs">
+							<input type="text" id="nome" class="input"><br>
+							<input type="text" id="email" class="input"><br>
+							<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via email.</label><br>
+							<select class="input">
+								<option selected="selected">Bairro</option>
+								<option>Centro</option>
+								<option>Rio Branco</option>
+								<option>Grassman</option>
+							</select><br>
+							<select class="input">
+								<option selected="selected">Rua</option>
+								<option>Rua 01</option>
+								<option>Rua 02</option>
+								<option>Rua 03</option>
+							</select><br>
+							<input type="text" id="numeroCelular" class="input"><br>
+							<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via celular.</label><br>
+						</section>
+					</section>
+					
+				</div>
 				
-				<h2 class="desenvolvedoras">Desenvolvedoras</h2>
-				<p class="desenvolvedoras">Fernanda Larissa Müller Lílian Juliana da Rosa Lívia Pereira Santos Paula Giovana Friedrich</p>
+				<section class="centralizar">
+					<button id="botaoAtualizar">Atualizar</button>				
+				<section>	
 				
-				<h2 class="colaboradores"></h2>
-				<p>Corpo de Bombeiros Voluntários de Rolante</p>
+			</div>
+
+			<div id="infoProjeto">
+				<section id="projetoObjetivo" class="projeto">
+					<h2>Projeto</h2>
+					<p class="texto">O projeto foi desenvolvido pensando na dificuldade de adquirir informação sobre as localidades afetadas e quais ruas da cidade estão alagadas, diante das enchentes que ocorrem frequentemente em nossa região.</p>
+				</section>
 				
-			</section>
+				<section id="desenvovedoras" class="projeto">
+					<h2>Desenvolvedoras</h2>
+					<p class="texto">Fernanda Larissa Müller <br>Lílian Juliana da Rosa <br>Lívia Pereira Santos <br>Paula Giovana Friedrich</p>
+				</section>
+				
+				<section id="colaboradores" class="projeto">
+					<h2>Colaboradores</h2>
+					<p class="texto">Corpo de Bombeiros Voluntários de Rolante.</p>
+				</section>
+			</div>
 			
 			<footer>
 				<p>Copyright &copy; 2021 - Sistema de Alerta de Enchente de Rolante	 - All Rights Reserved</p>

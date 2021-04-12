@@ -46,33 +46,35 @@ header{
 	/*Para deixar o layout centralizado*/
 	width: 90%;
 	margin: 0 auto;
+	
+	font-family: Verdana, Arial, sans-serif;
 }
 
-/*Para fazer as páginas desaparecerem
-.informacoes{
-	position: absolute;
-	left: -3000px;
+#inicio h3{
+	font-size: 35px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
-.locais{
-	position: absolute;
-	left: -3000px;
+
+#inicio{
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 25px;
 }
-.graficos{
-	position: absolute;
-	left: -3000px;
+
+.ultimas{
+	width: 30%;
+	text-align: center;
+	padding: 10px;
 }
-.mapa{
-	position: absolute;
-	left: -3000px;
+
+.texto{
+	padding-left: 100px;
+	width: 65%;
+	text-align: justify;
+	line-height: 40px;
 }
-.cadastro{
-	position: absolute;
-	left: -3000px;
-}
-.projeto{
-	position: absolute;
-	left: -3000px;
-}*/
 
 .informacoes{
 	font-family: Verdana, Arial, sans-serif;
@@ -119,4 +121,127 @@ header{
 	padding: 10px;
 }
 
+.cadastro h2{
+	font-size: 40px;
+	text-align: center;
+	line-height: 150%;
+	letter-spacing: .3rem;
+	
+	padding: 20px 350px 20px 350px;
+}
+
+.cadastro button{
+	background-color: #AEC6CD;
+	border-color: #AEC6CD;
+	border-radius: 10px;
+	font-size: 30px;
+	
+	border: 10px;
+	width: 400px; 
+	height: 50px;
+	
+	margin: 10% 20px;
+}
+
+
+#botoesCadastro{
+	text-align: center;
+	justify-content: space-around;
+}
+
+#infoCadastros{
+	padding: 20px 0;
+	display: flex;
+	font-size: 25px;
+	justify-content: space-evenly;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#escritas p{
+	padding: 10px;
+}
+
+.input{
+	padding-left: 110px;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+#checkTexto{
+	font-size: 15px;
+}
+
+#botaoCadastrar{
+	font-size: 25px;
+	
+	border: 5px;
+	width: 180px; 
+	height: 40px;
+}
+
+#atualizarCadastro{
+	display: flex;
+}
+
+#dadosAntigos{
+	padding: 20px 0;
+	display: flex;
+	font-size: 25px;
+	justify-content: space-evenly;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#dadosNovos{
+	padding: 20px 0;
+	display: flex;
+	font-size: 25px;
+	justify-content: space-evenly;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#botaoAtualizar{
+	background-color: #AEC6CD;
+	border-color: #AEC6CD;
+	border-radius: 10px;
+	font-size: 25px;
+	
+	border: 5px;
+	width: 180px; 
+	height: 40px;
+}
+
+.centralizar{
+	width: 15%;
+	margin: 0 auto;
+}
+
+#infoProjeto{
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 25px;
+}
+
+.projeto{
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+}
+
+#infoProjeto h2{
+	font-size: 35px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+
+footer{
+	clear: both;
+	border-top: 1px dotted #AAA;
+	border-bottom: 1px dotted #AAA;
+	padding: 5px 0 15px;
+}
 
