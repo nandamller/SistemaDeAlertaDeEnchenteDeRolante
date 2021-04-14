@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>Sistema de Alerta de Enchente em Rolante</title>
+		<meta charset="utf-8">
+		
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="query.js"></script>
+			
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/estiloBombeiros.css">
+	</head>
+	
+	<body>
+		<header>
+			<section id="SAER">
+				<img id="logotipo" src="img/logo.png" alt="Imagem do logotipo">
+				<h1>Sistema de Alerta de Enchente de Rolante</h1>
+				
+			</section>
+			
+			<nav id="navegacao">
+				<ul class="menu">
+					<li id="opcaoInicio"><a href="">Início</a></li>
+					<li id="opcaoInfo"><a href="">Informações</a></li>
+					<li><a href="">Locais</a></li>
+					<li><a href="">Gráficos</a></li>
+					<li><a href="">Mapa</a></li>
+					<li><a href="">Cadastrar</a></li>
+					<li><a href="">Projeto</a></li>
+				</ul>	
+			</nav>		
+		</header>
+		
+		<div id="conteudo">
+			<section id="inicio">
+				<div class="ultimas">
+					<h3>Informações</h3>
+					<p class="texto">Estarão disponíveis no site as localidades afetadas, além de informações sobre o que fazer em situação de enchentes e contatos de emergência.</p>
+				</div>
+				
+				<div class="ultimas">
+					<h3>Gráficos</h3>
+					<p class="figura"><img src="img/grafico.png" width="300" alt="Imagem do gráfico"></p>
+				</div>
+				
+				<div class="ultimas">
+					<h3>Mapa</h3>
+					<p class="figura"><img src="img/mapa.png" width="300" alt="Imagem do mapa"></p>
+				</div>
+			</section>
+			
+			<section class="informacoes">
+				<div class="layoutBom">
+					<h2>Em caso de emergêngia ligue:</h2>
+					<div class="esquerda">
+						<div id="contato">
+							<p id="infoBom">Bombeiros</p>
+							<p id="infoBri">Brigada Militar</p>
+							<p id="infoDef">Defesa Civil</p>
+						</div>
+						
+						<div id="numeros">
+							<p id="infoBomNum">193</p>
+							<p id="infoBriNum">190</p>
+							<p id="infoDefNum">199</p>
+						</div>
+					</div>	
+					
+					<img src="img/editar.png" class="imgEditar" alt="Imagem do mapa">
+				</div>
+				<div id="oQueFazer" class="layoutBom">
+					<h2>O que fazer:</h2>
+					
+					<div class="esquerda">
+						<p>Só para teste, pois essas informações estarão no Banco de Dados. Quando um desastre de origem natural acontece, devemos tomar todos os cuidados possíveis para evitar a transmissão de doenças e preservar a nossa saúde.</p>
+					</div>
+					
+					<img src="img/editar.png" class="imgEditar">
+				</div>
+				
+				<img src="img/adicionarConteudo.png" class="imgAdd">
+				
+			</section>
+			
+			<section class="locais">
+				<div class="layoutBom">
+					<h2>Locais Afetados:</h2>
+					<div class="esquerda">
+						<section id="bairros">
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua com um nome nome nome nome grande teste;</p>
+							</div>
+							
+							<div class="bairro">
+								<h3>Bairro teste2</h3>
+								<p>- Rua teste 2</p>
+								<p>- Rua teste 3</p>
+							</div>
+							
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua teste 4;</p>
+							</div>
+							
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua teste 5;</p>
+							</div>
+							
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua teste 6;</p>
+							</div>
+							
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua teste 7;</p>
+							</div>
+							
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua teste 8;</p>
+							</div>
+							
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua teste 9;</p>
+							</div>
+						
+							<div class="bairro">
+								<h3>Bairro teste</h3>
+								<p>- Rua teste 10;</p>
+							</div>
+						</section>
+					</div>
+					<img src="img/editar.png" class="imgEditar">
+				</div>	
+				
+				<img src="img/adicionarConteudo.png" class="imgAdd">
+			</section>
+			
+			<section class="graficos">
+				<h3 id="tituloGrafico"></h3>
+			</section>
+			<section class="mapa">
+			</section>
+			
+			<div class="cadastro">
+				<h2>Cadastre-se e receba as informações sobre a inundação em sua rua e região por SMS ou e-mail.</h2>
+				<section id="botoesCadastro">
+					<button class="botaoCadastro">Novo cadastro</button>
+					<button class="botaoCadastro">Atualizar cadastro</button>
+				</section>
+				
+				<div id="infoCadastros">
+					<div class="layoutBom">
+						<section id="escritas">
+							<p>Nome completo</p>
+							<p>E-mail</p>
+							<p></p>
+							<p>Endereço</p>
+							<p>Número celular</p>
+						</section>
+						
+						<section id="inputs">
+							<input type="text" id="nome" class="input"><br>
+							<input type="text" id="email" class="input"><br>
+							<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via email.</label><br>
+							<select class="input">
+								<option selected="selected">Bairro</option>
+								<option>Centro</option>
+								<option>Rio Branco</option>
+								<option>Grassman</option>
+							</select>
+							<select class="input">
+								<option selected="selected">Rua</option>
+								<option>Rua 01</option>
+								<option>Rua 02</option>
+								<option>Rua 03</option>
+							</select><br>
+							<input type="text" id="numeroCelular" class="input"><br>
+							<input type="checkbox" checked="checked" class="input"><label id="checkTexto">Gostaria de receber mensagens via celular.</label><br>
+						</section>
+					</div>
+					
+					<img src="img/editar.png" class="imgEditar" alt="Imagem do mapa">
+				</div>
+				<section class="centralizar">
+					<img src="img/adicionarInfoCadastro.png" class="imgAdd" alt="Imagem do mapa">				
+				<section>
+				
+			</div>	
+			
+
+			<div id="infoProjeto">
+				<section id="projetoObjetivo" class="projeto">
+					<h2>Projeto</h2>
+					<p class="texto">O projeto foi desenvolvido pensando na dificuldade de adquirir informação sobre as localidades afetadas e quais ruas da cidade estão alagadas, diante das enchentes que ocorrem frequentemente em nossa região.</p>
+				</section>
+				
+				<section id="desenvovedoras" class="projeto">
+					<h2>Desenvolvedoras</h2>
+					<p class="texto">Fernanda Larissa Müller <br>Lílian Juliana da Rosa <br>Lívia Pereira Santos <br>Paula Giovana Friedrich</p>
+				</section>
+				
+				<section id="colaboradores" class="projeto">
+					<h2>Colaboradores</h2>
+					<p class="texto">Corpo de Bombeiros Voluntários de Rolante.</p>
+				</section>
+			</div>
+			
+			<footer>
+				<p>Copyright &copy; 2021 - Sistema de Alerta de Enchente de Rolante	 - All Rights Reserved</p>
+			</footer>
+			
+		</div>
+	</body>
+
+</html>
