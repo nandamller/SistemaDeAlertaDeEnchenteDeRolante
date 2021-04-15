@@ -121,6 +121,22 @@ header{
 	padding: 10px;
 }
 
+#graficos{
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#graficos h3{
+	font-size: 40px;
+}
+
+.grafico{
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+}
+
 .cadastro h2{
 	font-size: 40px;
 	text-align: center;
