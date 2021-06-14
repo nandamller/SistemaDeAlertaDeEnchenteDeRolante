@@ -1,7 +1,6 @@
 $(document).ready(function(){
-	
+	$("#inicio").click(function(){
+		window.location.href = "hrefProjeto"
+	})
 })
 
-function myFunction() {
-  document.getElementById("confirmCadastrar").style.display = "block";
-}
